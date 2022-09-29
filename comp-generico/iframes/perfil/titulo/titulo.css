@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-radius: 15px; 
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(30, 221, 255);
+    text-shadow: -.5vh -.5vh #fff, .5vh .5vh #000;
+    background-color: rgb(255, 103, 48);
+    box-shadow: 0 0 25vh 25vh rgb(255, 103, 48);
+    font-size: 38vh;
+    font-family: 'Kanit', sans-serif;
+}

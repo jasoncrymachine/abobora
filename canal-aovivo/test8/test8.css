@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    background-color: transparent;
+    position: relative;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.fonte-h1 {
+    height: auto;
+    color: aliceblue;
+    font-size: 40vh;
+    font-family: 'Kanit', sans-serif;
+}

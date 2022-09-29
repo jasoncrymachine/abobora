@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(127, 248, 157);
+}
+
+.objetivos-grade {
+    display: grid;
+    grid-template: 
+        "h2 h2"
+        "objetivos datas"
+    ;
+}
+
+.h2-lista-grade {
+    grid-area: h2;
+}
+
+.objetivos-lista-grade {
+    grid-area: objetivos;
+}
+
+.datas-lista-grade {
+    grid-area: datas;
+}
+
+
+

@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+}
+
+.msg-grid {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.msg-item {
+    position: relative;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: rgb(70, 70, 70);
+    padding: 1em;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+.msg-botao-area {
+    position: absolute;
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    width: 100%;
+    height: 100%;
+}
+
+.msg-form {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.msg-botao {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+
+.iframe-tamanho {
+    width: 450px;
+    height: 140px;
+}

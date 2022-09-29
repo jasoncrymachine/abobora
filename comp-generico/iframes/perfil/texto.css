@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 4vh;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+}
+
+.grade-principal-perfil {
+    display: grid;
+    grid-template:
+    "a1 a2 a3"
+    "b1 b2 b3"
+    "c1 c2 c3"
+    "d1 d2 d3"
+    ;
+    grid-template-columns: 1fr 15fr 1fr;
+    grid-template-rows: 1fr 4fr 8fr 1fr;
+    gap: 1vh;
+    border-radius: 0;
+}
+
+.area-home-perfil {
+    grid-area: b2;
+    background-color: rgb(255, 28, 77); /*background-color: rgb(223, 70, 0);*/
+}
+
+.area-perfil {
+    grid-area: c2;
+}
+
+.area-perfil, .area-perfil * {
+    border-radius: 2vh;
+}
+
+.grade-interna-perfil {
+    display: grid;
+    grid-template:
+    "aa1 aa2 aa2 aa4"
+    "aa1 bb2 bb3 bb3"
+    "cc1 cc1 cc1 cc1"
+    ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 6fr 6fr 2fr;
+    gap: .8vh;
+}
+
+.botao1-b1-perfil {
+    display: grid;
+    grid-area: aa1;
+    background-image: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #FF00C7 100%), linear-gradient(121.28deg, #213100 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), linear-gradient(114.9deg, #00C6A2 0%, #6A45A8 100%), radial-gradient(100% 148.07% at 0% 0%, #FFFFFF 0%, #1DCD00 100%);
+    background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+
+.b1-area1 {
+    background: rgba(195, 255, 31, 0.8);
+    position: absolute;
+    height: 80%;
+    min-height: 80%;
+    top: 0;
+}
+
+.b1-area2 {
+    height: 20%;
+    min-height: 20%;
+    bottom: 0;
+    background-color: rgba(255, 0, 191, 0.8);
+    position: absolute;
+}
+
+.botao2-b2-perfil {
+    grid-area: aa2;
+    background-color: rgba(134, 136, 255, 0.3);
+}
+
+
+.botao3-b3-perfil {
+    grid-area: aa4;
+    background-color: rgb(255, 255, 255);
+}
+
+.b3-botao {
+    border: none;
+    background-color: transparent;
+    opacity: 0;
+}
+
+.botao4-b4-perfil {
+    display: grid;
+    grid-area: bb2;
+    background-color: #fff;
+}
+
+.b4-grade {
+    display: grid;
+    grid-template: 
+    "a1b4 a2b4"
+    "b1b4 b2b4"
+    ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 96%;
+    min-height: 96%;
+    width: 96%;
+    min-width: 96%;
+    justify-self: center;
+    align-self: center;
+    gap: .5vh;
+}
+
+.b4-botao-interno-area1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: #0029FF;
+}
+
+.b4-botao-interno-area2 {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-color: #0029FF;
+}
+
+.b4-botao-interno-area3 {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    background-color: #0029FF;
+}
+
+.b4-botao-interno-area4 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background-color: #0029FF;
+}
+
+.b4-botao-interno-area5 {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    background-color: #000442;
+    height: 50%;
+    min-height: 50%;
+    width: 60%;
+    min-width: 60%;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.botao5-b5-perfil {
+    grid-area: bb3;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.botao6-b6-perfil {
+    grid-area: cc1;
+    background-color: rgba(0, 255, 149, 0.6);
+}

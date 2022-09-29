@@ -1,0 +1,121 @@
+ul {
+    list-style-type: none;
+    padding: 0em;
+}
+
+.objetivos-grid {
+    gap: .4em;
+    display: grid;
+    grid-template: 
+        "ideias aprovadas em-andamento"
+        "ideias aprovadas concluidos"
+        "icanal icanal icanal"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 94vw;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: center
+}
+
+.sombra-20{
+    background-color: rgba(0, 0, 0, 0.13)
+}
+
+.ideias {
+    padding: 1em;
+    padding-top: 0em;
+    border-radius: 1.2em;
+    border: 2px solid rgb(116, 255, 232);
+    background-color: rgb(146, 255, 237);
+    grid-area: ideias;
+}
+
+.aprovadas {
+    padding: 1em;
+    padding-top: 0em;
+    border-radius: 1.2em;
+    border: 2px solid rgb(255, 167, 182);
+    background-color: rgb(255, 177, 190);
+    grid-area: aprovadas;
+}
+
+.em-andamento {
+    padding: 1em;
+    padding-top: 0em;
+    border-radius: 1.2em;
+    border: 2px solid rgb(255, 243, 76);
+    background-color: rgb(252, 245, 147);
+    grid-area: em-andamento;
+}
+
+.concluido {
+    padding: 1em;
+    padding-top: 0em;
+    border-radius: 1.2em;
+    border: 2px solid rgb(155, 255, 155);
+    background-color: rgb(176, 255, 176);
+    grid-area: concluidos;
+}
+
+.canal {
+    padding: 1em;
+    padding-top: 0em;
+    border-radius: 1.2em;
+    border: 2px solid rgb(209, 0, 0);
+    background-color: rgb(255, 62, 62);
+    grid-area: icanal;
+}
+
+.lista-indentacao {
+    padding-left: 1em;
+    background-color: rgba(255, 255, 255, 0.438);
+}
+
+.concluidos-grade {
+    gap: 1em;
+    display: grid;
+    grid-template: 
+        "h2 botão"
+        "ul ul"
+    ;
+    grid-template-columns: 8em 1fr;
+    grid-template-rows: 1.3em 1fr;
+
+}
+
+.concluidos-h2 {
+    grid-area: h2;
+    background-color: rgb(255, 255, 255);
+}
+.concluidos-botão {
+    grid-area: botão;
+    background-color: rgb(182, 123, 67, 0);
+    height: 1.4em;
+    width: 4em;
+    justify-self: end;
+    margin-top: 1em;
+}
+.concluidos-ul {
+    grid-area: ul;
+    background-color: rgb(26, 80, 228, 0);
+}
+
+.abobora-botao {
+    background-color: rgb(255, 120, 57);
+    color: rgb(142, 21, 255);
+    border: none;
+    margin-bottom: .5em;
+    border-radius: .3em;
+    font-size: 1.5em;
+    box-shadow: 1px 3px 6px .01em rgb(255, 120, 57);
+}
+
+.abobora-botao:hover {
+    background-color: rgb(255, 51, 0);
+    color: rgb(224, 190, 255);
+    box-shadow: 2px 5px 12px .01em rgb(253, 0, 0);
+}

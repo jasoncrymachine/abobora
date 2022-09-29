@@ -90,9 +90,13 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+.botao3-b3-perfil iframe {
+    position: absolute;
+    z-index: 0;
+}
+
 .b3-botao {
     border: none;
-    background-color: transparent;
     opacity: 0;
 }
 

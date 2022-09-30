@@ -92,7 +92,7 @@ body {
 
 .botao3-b3-perfil iframe {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
 }
 
 .b3-botao {

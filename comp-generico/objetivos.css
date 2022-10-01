@@ -3,6 +3,12 @@ ul {
     padding: 0em;
 }
 
+.dicio-icon {
+    position: absolute;
+    right: 4vh;
+    top: 6vh;
+}
+
 .objetivos-grid {
     gap: .4em;
     display: grid;
@@ -18,11 +24,11 @@ ul {
 
 .centralizar {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .sombra-20{
-    background-color: rgba(0, 0, 0, 0.13)
+    background-color: rgba(0, 0, 0, .13);
 }
 
 .ideias {
@@ -118,4 +124,30 @@ ul {
     background-color: rgb(255, 51, 0);
     color: rgb(224, 190, 255);
     box-shadow: 2px 5px 12px .01em rgb(253, 0, 0);
+}
+
+/*=========================================*/
+
+li.li-estrutura-pagina::before {
+    content: "🪐";
+}
+
+li.li-hospedagem-pagina::before {
+    content: "🚀";
+}
+
+li.li-canal-youtube::before {
+    content: "🗿";
+}
+
+li.li-em-foco::before {
+    content: "🧦";
+}
+
+li.li-componentes-adicionais::before {
+    content: "🎆";
+}
+
+li.li-completo::before {
+    content: "💯";
 }

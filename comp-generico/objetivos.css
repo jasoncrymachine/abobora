@@ -3,11 +3,49 @@ ul {
     padding: 0em;
 }
 
-.dicio-icon {
-    position: absolute;
-    right: 4vh;
-    top: 6vh;
+.grid-pincipal {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: .4em;
 }
+
+/* a partir daqui são componentes posicionados no topo da página */
+
+.componentes-de-topo {
+    position: relative;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.componentes-de-topo > h1 {
+    margin: 2vh 0 0 3vh;
+    color: rgb(41, 42, 51);
+}
+
+.componentes-de-topo > form {
+    grid-row: 2;
+    top: 0;
+    margin: 2vh 0 1vh 2vh;
+}
+
+.dicionario {
+    grid-row: 2;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.dicio-icon {
+    font-size: 6vh;
+    margin: 0 3vh 4vh 0;
+    line-height: 0;
+    align-self: flex-end;
+}
+
+
+/* grade interna */
 
 .objetivos-grid {
     gap: .4em;
@@ -18,8 +56,8 @@ ul {
         "icanal icanal icanal"
     ;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 94vw;
+    grid-template-rows: repeat(3, auto);
+    width: 100%;
 }
 
 .centralizar {
@@ -109,6 +147,8 @@ ul {
     grid-area: ul;
     background-color: rgb(26, 80, 228, 0);
 }
+
+/* botão laranja */
 
 .abobora-botao {
     background-color: rgb(255, 120, 57);

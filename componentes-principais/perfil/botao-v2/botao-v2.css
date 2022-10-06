@@ -2,7 +2,7 @@
     margin: 0;
     position: relative;
     padding: 0;
-    --border-radius: 1;
+    --border-radius: 3;
 }
 
 body {
@@ -17,9 +17,9 @@ body {
 
 .area-geral {
     background-color: aqua;
-    /* width: 100%;
-    height: 100%; */
-    width: 80vh;
+    width: 100%;
+    height: 100%;
+    /* width: 80vh; */
     aspect-ratio: 2 / 1;
     border-radius: calc(var(--border-radius) * 3vh);
 }
@@ -32,6 +32,7 @@ body {
     height: 100%;
 }
 
+/* area esquerda */
 .area-esquerda {
     background: rgba(255, 20, 20, 1.6);
     grid-area: a1;
@@ -46,12 +47,26 @@ body {
 .area-miniatura-video {
     position: absolute;
     background-color: slategray;
-    height: 92%;
+    height: 94%;
     aspect-ratio: 5 / 4;
     border-radius: calc(var(--border-radius) * 2.6vh);
     justify-self: center;
     align-self: center;
     overflow: hidden;
+}
+
+.area-miniatura-video img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.area-miniatura-video form {
+    position: absolute;
+}
+.area-miniatura-video form button {
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
 }
 
 .etiqueta {
@@ -61,6 +76,7 @@ body {
     border-radius: 0 0 calc(var(--border-radius) * 4vh) 0;
 }
 
+/* temporizador */
 .tempo-do-video {
     width: 10%;
     aspect-ratio: 1/1;
@@ -76,39 +92,91 @@ body {
     padding: .15vh;
 }
 
-/* temporizador */
-
 .tempo-do-video.menor-que-um-minuto {
-    color: hsl(0, 89%, 48%);
-    background-color: hsla(0, 89%, 73%, 0.9);
+    background-color: transparent;
+    --tempo-menor-que-um-minuto-cor-principal: hsl(0, 89%, 48%);
+    --tempo-menor-que-um-minuto-cor-segundaria: hsla(0, 89%, 73%, 0.9);
+}
+.tempo-do-video.menor-que-um-minuto svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-menor-que-um-minuto-cor-principal);
+    fill: var(--tempo-menor-que-um-minuto-cor-segundaria);
+}
+.tempo-do-video.menor-que-um-minuto svg g:nth-child(4){
+    stroke: var(--tempo-menor-que-um-minuto-cor-segundaria);
 }
 
+
 .tempo-do-video.menor-que-dez-minutos {
-    color: hsl(29, 89%, 48%);
-    background-color: hsla(29, 89%, 78%, 0.9);
+    background-color: transparent;
+    --tempo-menor-que-dez-minutos-cor-principal: hsl(29, 89%, 48%);
+    --tempo-menor-que-dez-minutos-cor-segundaria: hsla(29, 89%, 78%, 0.9);
+}
+.tempo-do-video.menor-que-dez-minutos svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-menor-que-dez-minutos-cor-principal);
+    fill: var(--tempo-menor-que-dez-minutos-cor-segundaria);
+}
+.tempo-do-video.menor-que-dez-minutos svg g:nth-child(4){
+    stroke: var(--tempo-menor-que-dez-minutos-cor-segundaria);
 }
 
 .tempo-do-video.menor-que-uma-hora {
-    color: hsl(61, 89%, 48%);
-    background-color: hsla(61, 89%, 28%, 0.9);
+    background-color: transparent;
+    --tempo-menor-que-uma-hora-cor-principal: hsl(61, 89%, 48%);
+    --tempo-menor-que-uma-hora-cor-segundaria: hsla(61, 89%, 28%, 0.9);
 }
+.tempo-do-video.menor-que-uma-hora svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-menor-que-uma-hora-cor-principal);
+    fill: var(--tempo-menor-que-uma-hora-cor-segundaria);
+}
+.tempo-do-video.menor-que-uma-hora svg g:nth-child(4){
+    stroke: var(--tempo-menor-que-uma-hora-cor-segundaria);
+}
+
 
 .tempo-do-video.menor-que-cinco-horas {
-    color: hsl(138, 89%, 48%);
-    background-color: hsla(138, 89%, 28%, 0.9);
+    background-color: transparent;
+    --tempo-menor-que-cinco-horas-cor-principal: hsl(138, 89%, 48%);
+    --tempo-menor-que-cinco-horas-cor-segundaria: hsla(138, 89%, 28%, 0.9);
 }
+.tempo-do-video.menor-que-cinco-horas svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-menor-que-cinco-horas-cor-principal);
+    fill: var(--tempo-menor-que-cinco-horas-cor-segundaria);
+}
+.tempo-do-video.menor-que-cinco-horas svg g:nth-child(4){
+    stroke: var(--tempo-menor-que-cinco-horas-cor-segundaria);
+}
+
 
 .tempo-do-video.menor-que-dez-horas {
-    color: hsl(187, 89%, 48%);
-    background-color: hsla(187, 89%, 23%, 0.9);
+    background-color: transparent;
+    --tempo-menor-que-dez-horas-cor-principal: hsl(187, 89%, 48%);
+    --tempo-menor-que-dez-horas-cor-segundaria: hsla(187, 89%, 23%, 0.9);
 }
+.tempo-do-video.menor-que-dez-horas svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-menor-que-dez-horas-cor-principal);
+    fill: var(--tempo-menor-que-dez-horas-cor-segundaria);
+}
+.tempo-do-video.menor-que-dez-horas svg g:nth-child(4){
+    stroke: var(-menor-que-dez-horas-tempo--cor-segundaria);
+}
+
 
 .tempo-do-video.maior-que-dez-horas {
-    color: hsl(246, 89%, 48%);
-    background-color: hsla(246, 89%, 68%, 0.9);
+    background-color: transparent;
+    --tempo-maior-que-dez-horas-cor-principal: hsl(246, 89%, 48%);
+    --tempo-maior-que-dez-horas-cor-segundaria: hsla(246, 89%, 68%, 0.9);
 }
+.tempo-do-video.maior-que-dez-horas svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-maior-que-dez-horas-cor-principal);
+    fill: var(--tempo-maior-que-dez-horas-cor-segundaria);
+}
+.tempo-do-video.maior-que-dez-horas svg g:nth-child(4){
+    stroke: var(--tempo-maior-que-dez-horas-cor-segundaria);
+}
+/* temporizador fim */
+/* area esquerda fim */
 
-
+/* area direita */
 .area-direita {
     background-color: rgba(18, 24, 51, 0.3);
     grid-area: a2;
@@ -118,6 +186,7 @@ body {
     align-items: center;
 }
 
+/* orelhas */
 .grade-interna-orelhas {
     height: 80%;
     width: 42%;
@@ -144,6 +213,7 @@ body {
 .area1:hover, .area2:hover, .area3:hover, .area4:hover {
     left: 16%;
 }
+/* orelhas fim */
 
 .grade-interna-EM {
     position: absolute;

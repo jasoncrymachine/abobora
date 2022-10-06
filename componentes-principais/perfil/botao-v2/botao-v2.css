@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    position: relative;
+    padding: 0;
+    --border-radius: 1;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
+.area-geral {
+    background-color: aqua;
+    /* width: 100%;
+    height: 100%; */
+    width: 80vh;
+    aspect-ratio: 2 / 1;
+    border-radius: calc(var(--border-radius) * 3vh);
+}
+
+.grade-principal {
+    display: grid;
+    grid-template: 
+    "a1 a2"
+    ;
+    height: 100%;
+}
+
+.area-esquerda {
+    background: rgba(255, 20, 20, 1.6);
+    grid-area: a1;
+    height: 100%;
+    aspect-ratio: 5 / 4;
+    position: absolute;
+    z-index: 2;
+    border-radius: calc(var(--border-radius) * 3vh);
+    display: grid;
+}
+
+.area-miniatura-video {
+    position: absolute;
+    background-color: slategray;
+    height: 92%;
+    aspect-ratio: 5 / 4;
+    border-radius: calc(var(--border-radius) * 2.6vh);
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+}
+
+.etiqueta {
+    background-color: rgb(210, 161, 255);
+    height: 15%;
+    width: 20%;
+    border-radius: 0 0 calc(var(--border-radius) * 4vh) 0;
+}
+
+.tempo-do-video {
+    width: 10%;
+    aspect-ratio: 1/1;
+    background-color: rgb(72, 21, 255);
+    border-radius: 50vh;
+    position: absolute;
+    bottom: 1.5%;
+    right: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: .15vh;
+}
+
+/* temporizador */
+
+.tempo-do-video.menor-que-um-minuto {
+    color: hsl(0, 89%, 48%);
+    background-color: hsla(0, 89%, 73%, 0.9);
+}
+
+.tempo-do-video.menor-que-dez-minutos {
+    color: hsl(29, 89%, 48%);
+    background-color: hsla(29, 89%, 78%, 0.9);
+}
+
+.tempo-do-video.menor-que-uma-hora {
+    color: hsl(61, 89%, 48%);
+    background-color: hsla(61, 89%, 28%, 0.9);
+}
+
+.tempo-do-video.menor-que-cinco-horas {
+    color: hsl(138, 89%, 48%);
+    background-color: hsla(138, 89%, 28%, 0.9);
+}
+
+.tempo-do-video.menor-que-dez-horas {
+    color: hsl(187, 89%, 48%);
+    background-color: hsla(187, 89%, 23%, 0.9);
+}
+
+.tempo-do-video.maior-que-dez-horas {
+    color: hsl(246, 89%, 48%);
+    background-color: hsla(246, 89%, 68%, 0.9);
+}
+
+
+.area-direita {
+    background-color: rgba(18, 24, 51, 0.3);
+    grid-area: a2;
+    height: 100%;
+    border-radius: 0 calc(var(--border-radius) * 3vh) calc(var(--border-radius) * 3vh) 0;
+    display: grid;
+    align-items: center;
+}
+
+.grade-interna-orelhas {
+    height: 80%;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1%;
+}
+
+.grade-interna-orelhas:hover ~ .grade-interna-EM {
+    width: 49%;
+}
+
+.area1, .area2, .area3, .area4 {
+    background-color: rgb(255, 199, 16);
+    height: 25%;
+    width: 88%;
+    border-radius: calc(var(--border-radius) * 1vh);
+    z-index: 1;
+    left: 0;
+    transition: 120ms ease;
+}
+
+.area1:hover, .area2:hover, .area3:hover, .area4:hover {
+    left: 16%;
+}
+
+.grade-interna-EM {
+    position: absolute;
+    background-color: darkgreen;
+    height: 92%;
+    width: 55%;
+    justify-self: end;
+    align-self: center;
+    border-radius: calc(var(--border-radius) * 1.5vh);
+    right: 4%;
+    z-index: 0;
+    transition: 350ms ease-in;
+}

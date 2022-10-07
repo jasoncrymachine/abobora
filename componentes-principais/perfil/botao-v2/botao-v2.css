@@ -204,7 +204,7 @@ body {
     background-color: rgb(255, 199, 16);
     height: 25%;
     width: 88%;
-    border-radius: calc(var(--border-radius) * 1vh);
+    border-radius: calc(var(--border-radius) * 1.2vh);
     z-index: 1;
     left: 0;
     transition: 120ms ease;
@@ -222,7 +222,7 @@ body {
     width: 55%;
     justify-self: end;
     align-self: center;
-    border-radius: calc(var(--border-radius) * 1.5vh);
+    border-radius: calc(var(--border-radius) * 2.5vh);
     right: 4%;
     z-index: 0;
     transition: 350ms ease-in;

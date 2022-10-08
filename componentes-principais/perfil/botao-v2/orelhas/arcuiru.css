@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: repeating-linear-gradient(180deg, #970ff2 0%, #0597f2 31%, #49d907 52%, #eaf205 73%, #f24607 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body:hover h1 {
+    font-size: 85vh;
+}
+
+h1 {
+    color: rgb(24, 15, 32);
+    font-size: 70vh;
+}
+
+form {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+button {
+    border: none;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}

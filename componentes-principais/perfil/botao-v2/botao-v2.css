@@ -42,7 +42,6 @@ body {
     z-index: 2;
     border-radius: calc(var(--border-radius) * 3vh);
     display: grid;
-    opacity: .1;
 }
 
 .area-miniatura-video {
@@ -202,17 +201,32 @@ body {
 }
 
 .area1, .area2, .area3, .area4 {
-    background-color: rgb(255, 199, 16);
+    background-color: rgba(255, 199, 16, 0.5);
     height: 25%;
     width: 88%;
     border-radius: calc(var(--border-radius) * 1.2vh);
     z-index: 1;
     left: 0;
     transition: 120ms ease;
+    display: flex;
+    justify-content: end;
 }
 
 .area1:hover, .area2:hover, .area3:hover, .area4:hover {
     left: 16%;
+}
+
+.area1 iframe{
+    position: absolute;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: inherit;
+    right: 0%;
+    transition: .4s ease-out;
+}
+
+.area1:hover iframe {
+    right: 6%;
 }
 /* orelhas fim */
 

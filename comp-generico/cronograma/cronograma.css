@@ -29,16 +29,34 @@ body {
     width: 100%;
     grid-area: gp-area1;
     display: flex;
+    column-gap: 1vh;
 }
 
 .area-botao-perfil, .area-botao-objetivos{
     width: 50%;
-    border-radius: 3.6vh;
+    border-radius: 3vh;
     height: 100%;
 }
-.area-botao-perfil {
-    background-color: rgb(68, 248, 248);
+
+/* botão de perfil */
+
+.botao-perfil {
+    background-color: rgb(255, 120, 57) !important;
+    color: rgb(142, 21, 255);
+    border: none;
+    margin-bottom: .5em;
+    border-radius: .3em;
+    font-size: 3.6vh;
+    box-shadow: 1px 3px 6px .01em rgb(255, 120, 57);
 }
+
+.botao-perfil:hover {
+    background-color: rgb(255, 51, 0) !important;
+    color: rgb(224, 190, 255);
+    box-shadow: 2px 5px 12px .01em rgb(253, 0, 0);
+}
+
+/* botão de perfil fim  */
 .area-botao-objetivos {
     background-color: hotpink;
 }
@@ -62,25 +80,72 @@ body {
     grid-template-rows:repeat(3, 1fr);
     row-gap: 1vh;
     width: 100%;
-    aspect-ratio: 3/2;
+    aspect-ratio: 3 / 2;
 }
 
+/* barra superior */
 .barra-superior {
     grid-area: barra-superior;
-    background-color: darkorange;
     display: flex;
+    column-gap: 1vh;
 }
 
+/* proressão semanal */
 .area-grafico-semanal {
     height: 100%;
     width: 100%;
-    background: rgb(27, 117, 252);
-}
-.area-calendario {
-    aspect-ratio: 1/1;
-    background-color: rgb(139, 0, 0);
 }
 
+.grade-progressao-semanal {
+    background-color: rgb(15, 15, 24);
+    color: hsl(240, 23%, 58%);
+    height: 100%;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vh;
+}
+
+.grade-progressao-semanal h2 {
+    height: 0px;
+    opacity: 0;
+    text-align: center;
+    transition: 700ms linear;
+}
+.grade-progressao-semanal:hover h2{
+    opacity: 1;
+    height: 21%;
+}
+
+.area-barras-progressao-semanal {
+    display: flex;
+    background-color: rgb(15, 15, 24);
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 3%;
+    overflow: hidden;
+}
+.area-barras-progressao-semanal div {
+    background-color: springgreen;
+    height: 100%;
+    width: calc(100% / 9);
+    border-radius: 1vh;
+}
+
+/* progressão semanal fim */
+
+.area-calendario {
+    aspect-ratio: 1/1;
+    background-color: rgb(27, 0, 70);
+    border-radius: 3vh;
+}
+/* barra superior fim */
+
+/* cronograma diario */
 .cronograma {
     height: 100%;
     grid-area: cronograma;
@@ -98,6 +163,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cronograma h3 {
+    position: absolute;
 }
 
 #dormir {

@@ -15,7 +15,7 @@ ul {
     position: relative;
     grid-row: 1;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr auto 8fr;
     grid-template-rows: auto auto;
 }
 
@@ -148,15 +148,30 @@ ul {
     background-color: rgb(26, 80, 228, 0);
 }
 
-/* botão laranja */
+/* botão cronograma */
+.botao-cronograma {
+    background-color: hsl(335, 94%, 49%);
+    color: rgb(23, 22, 36);
+    border: none;
+    border-radius: .3em;
+    font-size: 3.6vh;
+    box-shadow: 1px 3px 6px .01em hsl(335, 94%, 49%);
+}
 
+.botao-cronograma:hover {
+    background-color: hsl(335, 94%, 39%);
+    color: hsl(244, 24%, 81%);
+    box-shadow: 2px 5px 12px .01em hsl(335, 94%, 29%);
+}
+
+/* botão perfil */
 .abobora-botao {
     background-color: rgb(255, 120, 57);
     color: rgb(142, 21, 255);
     border: none;
     margin-bottom: .5em;
     border-radius: .3em;
-    font-size: 1.5em;
+    font-size: 3.6vh;
     box-shadow: 1px 3px 6px .01em rgb(255, 120, 57);
 }
 

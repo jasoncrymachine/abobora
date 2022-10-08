@@ -42,6 +42,7 @@ body {
     z-index: 2;
     border-radius: calc(var(--border-radius) * 3vh);
     display: grid;
+    opacity: .1;
 }
 
 .area-miniatura-video {

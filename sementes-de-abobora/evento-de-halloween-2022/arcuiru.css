@@ -49,7 +49,7 @@ button {
     border-radius: 4vh;
 }
 
-.botao-retornar form {
+.botao-retornar form, .botao-todos-videos form{
     height: 100%;
     width: 100%;
     border-radius: inherit;
@@ -58,8 +58,15 @@ button {
     background-color: rgba(255, 105, 180, 1);
     border: none;
     border-radius: inherit;
-    opacity: 1;
 }
+
+.botao-todos-videos button{
+    background-color: darkblue;
+    border: none;
+    border-radius: inherit;
+    color: wheat;
+}
+
 /* area de botões fim */
 
 /* area de videos */
@@ -144,12 +151,11 @@ button {
 }
 
 /* hover dos videos */
-
 .area-videos div:nth-child(2):hover, div:nth-child(5):hover, div:nth-child(6):hover, div:nth-child(7):hover, div:nth-child(9):hover, div:nth-child(10):hover {
     width: 204%;
     z-index: 3;
 }
-
+/* hover dos videos fim */
 
 .area-videos div iframe {
     position: absolute;
@@ -161,4 +167,4 @@ button {
 .area-videos div iframe[src*="iframe-videos-arcuiru"] {
     background-color: rgba(255, 255, 255, 0.4);
 }
-
+/* area de videos fim */

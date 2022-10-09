@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    position: relative;
+}
+
+.div-extra  {
+    display: grid;
+    place-items: center;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > div {
+    /* background-image: url(//unsplash.it/250/200);
+    background-size: cover; */
+
+    display: grid;
+    grid-template: 
+    "videos menu"
+    ;
+    height: 100vh;
+    max-height: 80vw;
+    max-width: 100vw;
+    aspect-ratio: 5 / 4;
+    grid-template-columns: 9fr 1fr;
+}
+
+body > div > div:nth-child(1) {
+    grid-area: menu;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+body > div > div:nth-child(1) form {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 4vh;
+}
+
+body > div > div:nth-child(1) form button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+}
+
+
+
+
+body > div > div:nth-child(2) {
+    gap: 1vh;
+    grid-area: videos;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+body > div > div:nth-child(2) > div:nth-child(1) {
+    display: none;
+}
+
+body > div > div:nth-child(2) > div {
+    background-color: #fff;
+    height: 20%;
+    aspect-ratio: 5 / 4;
+    border-radius: 3vh;
+    overflow: hidden;
+}
+
+body > div > div:nth-child(2) > div img {
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+body > div > div:nth-child(2) > div > div:nth-child(2) {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+body > div > div:nth-child(2) > div > div:nth-child(2) form {
+    height: 100%;
+    width: 100%;
+}
+body > div > div:nth-child(2) > div > div:nth-child(2) button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+body > div > div:nth-child(2) > div > div:nth-child(3) {
+    position: absolute;
+    height: 28%;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(35, 255, 237, 0);
+    right: 7%;
+    bottom: 7%;
+    border-radius: 50vh;
+    overflow: hidden;
+}
+
+
+svg {
+    height: 140%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2.8);
+}
+
+.tempo-do-video.menor-que-um-minuto {
+    background-color: transparent;
+    --tempo-menor-que-um-minuto-cor-principal: hsl(0, 89%, 48%);
+    --tempo-menor-que-um-minuto-cor-segundaria: hsla(0, 89%, 73%, 0.9);
+}
+.tempo-do-video.menor-que-um-minuto svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-menor-que-um-minuto-cor-principal);
+    fill: var(--tempo-menor-que-um-minuto-cor-segundaria);
+}
+.tempo-do-video.menor-que-um-minuto svg g:nth-child(4){
+    stroke: var(--tempo-menor-que-um-minuto-cor-segundaria);
+}
+
+
+.tempo-do-video.menor-que-dez-minutos {
+    background-color: transparent;
+    --tempo-menor-que-dez-minutos-cor-principal: hsl(29, 89%, 48%);
+    --tempo-menor-que-dez-minutos-cor-segundaria: hsla(29, 89%, 78%, 0.9);
+}
+.tempo-do-video.menor-que-dez-minutos svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-menor-que-dez-minutos-cor-principal);
+    fill: var(--tempo-menor-que-dez-minutos-cor-segundaria);
+}
+.tempo-do-video.menor-que-dez-minutos svg g:nth-child(4){
+    stroke: var(--tempo-menor-que-dez-minutos-cor-segundaria);
+}
+
+.tempo-do-video.menor-que-uma-hora {
+    background-color: transparent;
+    --tempo-menor-que-uma-hora-cor-principal: hsl(61, 89%, 48%);
+    --tempo-menor-que-uma-hora-cor-segundaria: hsla(61, 89%, 28%, 0.9);
+}
+.tempo-do-video.menor-que-uma-hora svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-menor-que-uma-hora-cor-principal);
+    fill: var(--tempo-menor-que-uma-hora-cor-segundaria);
+}
+.tempo-do-video.menor-que-uma-hora svg g:nth-child(4){
+    stroke: var(--tempo-menor-que-uma-hora-cor-segundaria);
+}
+
+
+.tempo-do-video.menor-que-cinco-horas {
+    background-color: transparent;
+    --tempo-menor-que-cinco-horas-cor-principal: hsl(138, 89%, 48%);
+    --tempo-menor-que-cinco-horas-cor-segundaria: hsla(138, 89%, 28%, 0.9);
+}
+.tempo-do-video.menor-que-cinco-horas svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-menor-que-cinco-horas-cor-principal);
+    fill: var(--tempo-menor-que-cinco-horas-cor-segundaria);
+}
+.tempo-do-video.menor-que-cinco-horas svg g:nth-child(4){
+    stroke: var(--tempo-menor-que-cinco-horas-cor-segundaria);
+}
+
+
+.tempo-do-video.menor-que-dez-horas {
+    background-color: transparent;
+    --tempo-menor-que-dez-horas-cor-principal: hsl(187, 89%, 48%);
+    --tempo-menor-que-dez-horas-cor-segundaria: hsla(187, 89%, 23%, 0.9);
+}
+.tempo-do-video.menor-que-dez-horas svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-menor-que-dez-horas-cor-principal);
+    fill: var(--tempo-menor-que-dez-horas-cor-segundaria);
+}
+.tempo-do-video.menor-que-dez-horas svg g:nth-child(4){
+    stroke: var(-menor-que-dez-horas-tempo--cor-segundaria);
+}
+
+
+.tempo-do-video.maior-que-dez-horas {
+    background-color: transparent;
+    --tempo-maior-que-dez-horas-cor-principal: hsl(246, 89%, 48%);
+    --tempo-maior-que-dez-horas-cor-segundaria: hsla(246, 89%, 68%, 0.9);
+}
+.tempo-do-video.maior-que-dez-horas svg g:nth-child(3), g:nth-child(5), g:nth-child(6){
+    stroke: var(--tempo-maior-que-dez-horas-cor-principal);
+    fill: var(--tempo-maior-que-dez-horas-cor-segundaria);
+}
+.tempo-do-video.maior-que-dez-horas svg g:nth-child(4){
+    stroke: var(--tempo-maior-que-dez-horas-cor-segundaria);
+}
+/* temporizador fim */

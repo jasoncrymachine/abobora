@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    overflow: hidden;
 }
 
 .grade-principal {
@@ -169,11 +170,6 @@ body {
     position: absolute;
 }
 
-#dormir {
-    background-color: rgb(15, 15, 24);
-    color: hsl(240, 23%, 58%);
-}
-
 .trinta-min {
     background-color: blueviolet;
     border-radius: inherit;
@@ -183,29 +179,44 @@ body {
     rotate: -45deg;
     display: flex;
 }
-.levantar, .cafe{
-    background-color: crimson;
+
+.trinta-min > div {
+    rotate: 45deg;
     height: 100%;
     width: 64%;
     border-radius: inherit;
     position: absolute;
-    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    rotate: 45deg;
     font-size: 3vh;
 }
-.cafe {
-    background-color: indigo;
-    right: 0;
-    z-index: 0;
+
+.trinta-min > div:nth-child(1) {
+    z-index: 1;
 }
-.levantar:hover,.cafe:hover {
-    z-index: 2;
+.trinta-min > div:nth-child(2) {
+    right: 0;
+}
+.trinta-min > div:nth-child(2):hover {
+    z-index: 1;
 }
 
+#levantar {
+    background-color: crimson;
+}
+#cafe {
+    background-color: indigo;
+}
 #gravar {
     background-color: chartreuse;
     color: hsl(231, 94%, 40%);
+}
+#vago {
+    background-color: darkblue;
+    color: hsl(240, 100%, 77%);
+}
+#dormir {
+    background-color: rgb(15, 15, 24);
+    color: hsl(240, 23%, 58%);
 }

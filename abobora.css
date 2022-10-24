@@ -192,4 +192,16 @@ body {
 .botao6-b6-perfil {
     grid-area: cc1;
     background-color: rgba(0, 255, 149, 0.6);
+    display: flex;
+}
+
+.b6-item1 {
+    aspect-ratio: 1/1;
+    width: unset;
+    min-width: unset;
+    min-height: unset;
+}
+
+.b6-item1 form button {
+    border: none;
 }

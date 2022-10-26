@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    position: relative;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grade-principal {
+    background-color: #fff;
+    height: 60%;
+    aspect-ratio: 5/4;
+    border-radius: 5vh;
+}
+
+
+.grupo-publico {
+    top: 25%;
+}
+.grupo-publico > div {
+    display: flex;
+    gap: 1%;
+}
+.talento-html > div {
+    background-color: aqua;
+}
+.talento-css > div {
+    background-color: rgb(255, 60, 0);
+}
+.talento-seguir-cronograma > div {
+    background-color: rgb(255, 161, 205);
+}

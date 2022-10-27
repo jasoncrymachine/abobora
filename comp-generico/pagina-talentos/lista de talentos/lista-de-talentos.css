@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgba(7, 128, 27, 0.623);
+    height: 100vh;
+    width: 100vw;
+}
+.grupo-publico > div {
+    display: flex;
+    gap: 1%;
+}
+.grupo-publico > div > div {
+    width: calc(100% / 5);
+}
+.talento-html > div {
+    background-color: aqua;
+}
+.talento-css > div {
+    background-color: rgb(255, 60, 0);
+}
+.talento-seguir-cronograma > div {
+    background-color: rgb(255, 161, 205);
+}
+
+.porcentagem, .nivel, .pontos {
+    text-align: center;
+}

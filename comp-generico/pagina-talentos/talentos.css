@@ -16,23 +16,34 @@ body {
     background-color: #fff;
     height: 60%;
     aspect-ratio: 5/4;
+    border-radius: 4vh 4vh 5vh 5vh;
+}
+
+.botao-perfil {
+    height: 10%;
+}
+.botao-perfil * {
+    width: 100%;
+    height: 100%;
+}
+
+.botao-perfil button {
+    background-color: chocolate;
+    border: none;
     border-radius: 5vh;
 }
 
-
 .grupo-publico {
-    top: 25%;
-}
-.grupo-publico > div {
+    bottom: 0;
+    height: calc( 100% / 4 * 2.8);
+    width: 100%;
+    border-radius: inherit;
+    position: absolute;
     display: flex;
-    gap: 1%;
+    flex-direction: column;
 }
-.talento-html > div {
-    background-color: aqua;
-}
-.talento-css > div {
-    background-color: rgb(255, 60, 0);
-}
-.talento-seguir-cronograma > div {
-    background-color: rgb(255, 161, 205);
+
+.grupo-publico iframe {
+    width: 100%;
+    height: 100%;
 }

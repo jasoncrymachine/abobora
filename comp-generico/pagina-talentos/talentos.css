@@ -34,16 +34,18 @@ body {
 }
 
 .grupo-publico {
-    bottom: 0;
+    bottom: -1px;
     height: calc( 100% / 4 * 2.8);
     width: 100%;
     border-radius: inherit;
     position: absolute;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .grupo-publico iframe {
     width: 100%;
     height: 100%;
+    bottom: 0;
 }

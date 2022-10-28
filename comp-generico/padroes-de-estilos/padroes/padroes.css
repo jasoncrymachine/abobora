@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    position: relative;
+}
+
+body {
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+}
+
+.grade-principal {
+    background-color: navy;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr 4fr;
+}
+
+.botao {
+    grid-column: 1 / -1;
+}
+
+.botao form button {
+    width: 100%;
+    aspect-ratio: 10/1;
+    background-color: rgb(255, 81, 0);
+    border: none;
+}
+
+.preto {
+    background-color: black;
+    grid-column: 1 / -1;
+}
+.vermelho {
+    background-color: red;
+}
+.laranja {
+    background: rgb(255, 121, 12);
+}
+.amarelo {
+    background-color: yellow;
+}
+.verde {
+    background-color: lime;
+}
+.azul {
+    background-color: blue;
+}
+.roxo {
+    background-color: rgb(111, 0, 255);
+}
+
+.texto01 {
+    background-color: #4449;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.texto-preto01 p {
+    background-color: #4449;
+    aspect-ratio: 1/1;
+    height: 120px;
+    border-radius: 10px;
+    padding: 5px;
+    color: rgba(255, 255, 255, 0);
+    font-size: 2em;
+    text-shadow:
+    2px 1px 2px rgb(61, 61, 61),
+    -2px 1px 2px rgb(194, 194, 194),
+    2px -1px 2px rgb(27, 27, 27),
+    -2px -1px 2px rgb(10, 10, 10)
+    ;
+    -webkit-text-stroke: .4px rgb(194, 194, 194);
+}
+.texto-vermelho01 p {
+    padding: 5px;
+    color: rgba(255, 255, 255, 0);
+    font-size: 2em;
+    text-shadow:
+    2px 1px 2px rgb(97, 2, 2),
+    -2px 1px 2px rgb(255, 0, 0),
+    2px -1px 2px rgb(56, 1, 1),
+    -2px -1px 2px rgb(48, 2, 2)
+    ;
+    -webkit-text-stroke: .4px rgb(255, 0, 0);
+}
+.texto-laranja01 p {
+    padding: 5px;
+    color: rgba(255, 255, 255, 0);
+    font-size: 2em;
+    text-shadow:
+    2px 1px 2px rgb(172, 50, 2),
+    -2px 1px 2px rgb(255, 94, 0),
+    2px -1px 2px rgb(156, 36, 0),
+    -2px -1px 2px rgb(54, 18, 1)
+    ;
+    -webkit-text-stroke: .4px rgb(255, 94, 0);
+}
+.texto-amarelo01 p {
+    padding: 5px;
+    color: rgba(255, 255, 255, 0);
+    font-size: 2em;
+    text-shadow:
+    2px 1px 2px rgb(153, 138, 0),
+    -2px 1px 2px rgb(251, 255, 0),
+    2px -1px 2px rgb(56, 52, 1),
+    -2px -1px 2px rgb(48, 47, 2)
+    ;
+    -webkit-text-stroke: .4px rgb(251, 255, 0);
+}
+.texto-verde01 p {
+    padding: 5px;
+    color: rgba(255, 255, 255, 0);
+    font-size: 2em;
+    text-shadow:
+    2px 1px 2px rgb(2, 97, 42),
+    -2px 1px 2px rgb(115, 255, 0),
+    2px -1px 2px rgb(6, 56, 1),
+    -2px -1px 2px rgb(8, 29, 3)
+    ;
+    -webkit-text-stroke: .4px rgb(115, 255, .8);
+}
+.texto-azul01 p {
+    padding: 5px;
+    color: rgba(255, 255, 255, 0);
+    font-size: 2em;
+    text-shadow:
+    2px 1px 2px rgb(9, 22, 134),
+    -2px 1px 2px rgb(50, 207, 255),
+    2px -1px 2px rgb(13, 11, 104),
+    -2px -1px 2px rgb(3, 6, 29)
+    ;
+    -webkit-text-stroke: .4px rgb(50, 207, 255);
+}
+.texto-roxo01 p {
+    padding: 5px;
+    color: rgba(255, 255, 255, 0);
+    font-size: 2em;
+    text-shadow:
+    2px 1px 2px rgb(53, 9, 134),
+    -2px 1px 2px rgb(157, 82, 255),
+    2px -1px 2px rgb(51, 11, 104),
+    -2px -1px 2px rgb(13, 3, 29)
+    ;
+    -webkit-text-stroke: .4px rgb(157, 82, 255);
+}

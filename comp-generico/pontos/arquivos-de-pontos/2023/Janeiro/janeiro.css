@@ -27,6 +27,9 @@ body {
 .lista ul li {
     background-color: #fff;
     color: black;
+    list-style: none;
+    padding-left: .3vw;
+    text-align: center;
 }
 
 
@@ -34,9 +37,9 @@ body {
 
 
 .Julie-Fyerk {
-    background-color: lightslategrey;
+    background-color: hsl(266, 87%, 41%);
 }
 
 .Mio {
-    background-color: lightslategrey;
+    background-color: #43cd6b;
 }

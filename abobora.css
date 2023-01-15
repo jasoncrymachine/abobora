@@ -195,13 +195,13 @@ body {
     display: flex;
 }
 
-.b6-item1, .b6-item2, .b6-item3{
+.b6-item1, .b6-item2, .b6-item3, .b6-item4{
     aspect-ratio: 1/1;
     width: unset;
     min-width: unset;
     min-height: unset;
 }
 
-.b6-item1 form button, .b6-item2 form button, .b6-item3 form button {
+.b6-item1 form button, .b6-item2 form button, .b6-item3 form button, .b6-item4 form button{
     border: none;
 }

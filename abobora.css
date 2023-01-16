@@ -193,15 +193,21 @@ body {
     grid-area: cc1;
     background-color: rgba(0, 255, 149, 0.6);
     display: flex;
+    gap: 2px;
 }
 
-.b6-item1, .b6-item2, .b6-item3, .b6-item4{
+.b6-item1, .b6-item2, .b6-item3, .b6-item4, .b6-item5{
     aspect-ratio: 1/1;
     width: unset;
     min-width: unset;
     min-height: unset;
+
 }
 
-.b6-item1 form button, .b6-item2 form button, .b6-item3 form button, .b6-item4 form button{
+.b6-item5 form button, .b6-item3 form button{
+    font-size: .6em;
+}
+
+.b6-item1 form button, .b6-item2 form button, .b6-item3 form button, .b6-item4 form button, .b6-item5 form button{
     border: none;
 }

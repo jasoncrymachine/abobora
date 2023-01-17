@@ -196,7 +196,7 @@ body {
     gap: 2px;
 }
 
-.b6-item1, .b6-item2, .b6-item3, .b6-item4, .b6-item5{
+.b6-item1, .b6-item2, .b6-item3, .b6-item4, .b6-item5, .b6-item6{
     aspect-ratio: 1/1;
     width: unset;
     min-width: unset;
@@ -204,10 +204,10 @@ body {
 
 }
 
-.b6-item5 form button, .b6-item3 form button{
+.b6-item5 form button, .b6-item3 form button, .b6-item6 form button{
     font-size: .6em;
 }
 
-.b6-item1 form button, .b6-item2 form button, .b6-item3 form button, .b6-item4 form button, .b6-item5 form button{
+.b6-item1 form button, .b6-item2 form button, .b6-item3 form button, .b6-item4 form button, .b6-item5 form button, .b6-item6 form button{
     border: none;
 }

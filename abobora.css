@@ -204,10 +204,15 @@ body {
 
 }
 
-.b6-item5 form button, .b6-item3 form button, .b6-item6 form button{
+.b6-item3 form button, .b6-item5 form button, .b6-item6 form button{
     font-size: .6em;
 }
 
 .b6-item1 form button, .b6-item2 form button, .b6-item3 form button, .b6-item4 form button, .b6-item5 form button, .b6-item6 form button{
     border: none;
+}
+
+.b6-item4 form button {
+    background-color: #114;
+    color: #50ff35;
 }

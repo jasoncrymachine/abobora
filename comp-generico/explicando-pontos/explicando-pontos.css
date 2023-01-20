@@ -67,3 +67,25 @@ body {
     width: calc(100% + 8px);
     height: calc(100% - 2px);
 }
+
+.grade-segundaria div:nth-child(-n + 4) div div:nth-child(-n + 7){
+    background-color: rgb(255, 0, 212);
+    box-sizing: border-box;
+    border: solid rgb(18, 202, 95);
+    border-width: 16px 2px 2px;
+}
+
+.grade-segundaria div:nth-child(-n + 4) div div:nth-child(8n + 8){
+    background-color: rgb(119, 0, 255);
+    box-sizing: border-box;
+    border: solid rgb(0, 85, 243);
+    border-width: 16px 2px 2px;
+}
+
+.grade-segundaria div:nth-child(5n + 5) div div:nth-child(8n + 8){
+    background-color: rgb(179, 255, 0);
+    box-sizing: border-box;
+    border: solid rgb(255, 156, 7);
+    border-width: 16px 2px 2px;
+    color: #000;
+}

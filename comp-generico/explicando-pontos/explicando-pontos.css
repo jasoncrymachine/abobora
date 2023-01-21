@@ -35,7 +35,7 @@ body {
     position: relative;
 }
 
-.teste {
+.div-separadora {
     position: absolute;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -43,7 +43,7 @@ body {
     color: #fff;
 }
 
-.teste div{
+.div-separadora > div{
     aspect-ratio: 1/1;
     background-color: rgba(239, 67, 255, 0.281);
 }
@@ -68,24 +68,81 @@ body {
     height: calc(100% - 2px);
 }
 
-.grade-segundaria div:nth-child(-n + 4) div div:nth-child(-n + 7){
-    background-color: rgb(255, 0, 212);
+.grade-segundaria > div:nth-child(-n + 4) > div > div:nth-child(-n + 7){
     box-sizing: border-box;
-    border: solid rgb(18, 202, 95);
-    border-width: 16px 2px 2px;
+    border: solid rgb(18, 202, 95, 0);
+    border-width: 2px 1px;
 }
 
-.grade-segundaria div:nth-child(-n + 4) div div:nth-child(8n + 8){
+.grade-segundaria > div:nth-child(-n + 4) > div > div:nth-child(8n + 8){
     background-color: rgb(119, 0, 255);
     box-sizing: border-box;
     border: solid rgb(0, 85, 243);
-    border-width: 16px 2px 2px;
+    border-width: 2px 2px 2px 4px;
 }
 
-.grade-segundaria div:nth-child(5n + 5) div div:nth-child(8n + 8){
+.grade-segundaria > div:nth-child(5n + 5) > div > div:nth-child(8n + 8){
     background-color: rgb(179, 255, 0);
     box-sizing: border-box;
     border: solid rgb(255, 156, 7);
-    border-width: 16px 2px 2px;
+    border-width: 2px 2px 2px 4px;
     color: #000;
+}
+
+.grade-segundaria > div:nth-child(-n + 4) > div > div:nth-child(1) {
+    border: solid rgba(18, 202, 95, 0);
+    border-width: 2px 1px 2px 2px;
+}
+
+.grade-segundaria > div:nth-child(-n + 4) > div > div:nth-child(7) {
+    border: solid rgba(18, 202, 95, 0);
+    border-width: 2px 4px 2px 1px;
+}
+
+.div-separadora > div > .dia-da-semana {
+    display: grid;
+    grid-template-rows: 3fr 3.5fr 3.5fr;
+}
+
+.dia-da-semana {
+    background-color: rgb(175, 252, 255);
+    border-radius: 1ex;
+    height: 100%;
+    width: 100%;
+}
+
+.nome-do-dia {
+    color: #000;
+    border-radius: 1ex;
+    text-align: center;
+}
+
+.pontos-cinza {
+    background-color: rgba(37, 37, 37);
+}
+
+.pontos-colorido {
+    background-color: rgb(180, 255, 118);
+    color: #000;
+}
+
+.pontos-colorido, .pontos-cinza {
+    border-radius: 1ex;
+    text-align: center;
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    justify-self: center;
+    align-self: center;
+}
+
+.emblema {
+    border-radius: 1ex;
+    height: 100%;
+}
+
+.emblema-texto {
+    color: #000;
+    text-align: center;
+    border-radius: 1ex;
+    height: 100%;
 }

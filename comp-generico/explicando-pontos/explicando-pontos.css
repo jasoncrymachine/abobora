@@ -45,7 +45,6 @@ body {
 
 .div-separadora > div{
     aspect-ratio: 1/1;
-    background-color: rgba(239, 67, 255, 0.281);
 }
 
 .semana1, .semana2, .semana3, .semana4, .semana5{
@@ -66,6 +65,20 @@ body {
     box-sizing: border-box;
     width: calc(100% + 8px);
     height: calc(100% - 2px);
+    z-index: -1;
+}
+
+.barra-dourada {
+    position: absolute;
+    transform: translate(-10%);
+    grid-column: 8 / 9;
+    border: solid rgb(255, 201, 25);
+    border-width: 0 0 0 4px;
+    box-sizing: border-box;
+    width: 1px;
+    height: calc(100% - 2px);
+    z-index: 1;
+    transform: translateX(-8px);
 }
 
 .grade-segundaria > div:nth-child(-n + 4) > div > div:nth-child(-n + 7){
@@ -75,16 +88,14 @@ body {
 }
 
 .grade-segundaria > div:nth-child(-n + 4) > div > div:nth-child(8n + 8){
-    background-color: rgb(119, 0, 255);
     box-sizing: border-box;
-    border: solid rgb(0, 85, 243);
+    border: solid rgb(0, 85, 243, 0);
     border-width: 2px 2px 2px 4px;
 }
 
 .grade-segundaria > div:nth-child(5n + 5) > div > div:nth-child(8n + 8){
-    background-color: rgb(179, 255, 0);
     box-sizing: border-box;
-    border: solid rgb(255, 156, 7);
+    border: solid rgb(255, 156, 7, 0);
     border-width: 2px 2px 2px 4px;
     color: #000;
 }
@@ -138,6 +149,11 @@ body {
 .emblema {
     border-radius: 1ex;
     height: 100%;
+    background-color: rgba(119, 0, 255);
+}
+
+.nucleo {
+    background-color: rgb(255, 221, 69);
 }
 
 .emblema-texto {
@@ -145,4 +161,9 @@ body {
     text-align: center;
     border-radius: 1ex;
     height: 100%;
+    opacity: 0;
+}
+
+.emblema-texto:hover {
+    opacity: 1;
 }

@@ -32,7 +32,9 @@ body {
     text-align: center;
 }
 
-
+.total {
+    background-color: coral !important;
+}
 
 
 

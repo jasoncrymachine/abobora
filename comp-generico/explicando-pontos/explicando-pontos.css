@@ -147,9 +147,13 @@ body {
 }
 
 .emblema {
+    display: flex;
+    position: relative;
     border-radius: 1ex;
     height: 100%;
     background-color: rgba(119, 0, 255);
+    justify-content: center;
+    align-items: center;
 }
 
 .nucleo {
@@ -162,8 +166,69 @@ body {
     border-radius: 1ex;
     height: 100%;
     opacity: 0;
+    position: absolute;
 }
 
-.emblema-texto:hover {
+.semana1 .emblema .gradiente {
+    position: absolute;
+    height: calc(100% - 8px);
+    width: calc(100% - 8px);
+    border-radius: 50%;
+    background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(34, 100%, 77%, 0.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(34,100%,77%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(34,100%,77%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(34,100%,77%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 50% 50%, 200% 50%, rgb(255, 204, 138) 5%, rgb(224, 165, 87) 30%, rgb(201, 119, 12) 100%);
+}
+
+.semana2 .emblema .gradiente {
+    position: absolute;
+    height: calc(100% - 8px);
+    width: calc(100% - 8px);
+    border-radius: 50%;
+    background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0, 0%, 100%, 0.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 50% 50%, 200% 50%, rgb(223, 223, 223) 5%, rgb(196, 195, 195) 30%, rgb(173, 172, 172) 100%);
+}
+
+.semana3 .emblema .gradiente {
+    position: absolute;
+    height: calc(100% - 8px);
+    width: calc(100% - 8px);
+    border-radius: 50%;
+    background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(54, 100%, 80%, 0.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(54, 100%, 80%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(54, 100%, 80%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(54, 100%, 80%, 0.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 50% 50%, 200% 50%, rgb(255, 237, 166) 5%, rgb(255, 220, 103) 30%, rgb(235, 186, 25) 100%);
+}
+
+.semana4 .emblema .gradiente {
+    position: absolute;
+    height: calc(100% - 8px);
+    width: calc(100% - 8px);
+    border-radius: 50%;
+    background-image: -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(180, 100%, 80%, 0.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(180, 100%, 80%,.6) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(180, 100%, 80%,.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(180, 100%, 80%, 0.5) 0%, hsla(0,0%,100%,0) 100%),
+    -webkit-radial-gradient( 50% 50%, 200% 50%, rgb(170, 253, 253) 5%, rgb(59, 226, 255) 30%, rgb(23, 199, 253) 100%);
+}
+
+.semana5 .emblema .gradiente {
+    position: absolute;
+    height: calc(100% - 8px);
+    width: calc(100% - 8px);
+    border-radius: 50%;
+    background: conic-gradient(red, yellow, lime, aqua, blue, fuchsia, red);
+}
+
+.emblema:hover .gradiente{
+    opacity: 0;
+}
+
+.emblema:hover .emblema-texto{
     opacity: 1;
 }

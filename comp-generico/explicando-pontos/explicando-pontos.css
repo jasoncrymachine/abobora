@@ -232,3 +232,42 @@ body {
 .emblema:hover .emblema-texto{
     opacity: 1;
 }
+
+.grade-principal {
+    opacity: 1;
+}
+
+body {
+    background-image: 
+        radial-gradient(
+            gold 15%,
+            transparent 20%
+        ),
+        radial-gradient(
+            red 15%,
+            transparent 20%
+        ),
+        radial-gradient(
+            red 3%,
+            yellow 6%,
+            lime 9%,
+            blue 12%,
+            rgb(81, 0, 148) 16%,
+            red 18%,
+            transparent 21%
+        ),
+        radial-gradient(
+            red 3%,
+            yellow 6%,
+            lime 9%,
+            blue 12%,
+            rgb(81, 0, 148) 16%,
+            red 18%,
+            rgb(114, 245, 250) 21%
+        );
+    background-size: 80px 80px;
+    --tamanho: 5px;
+    --tamanho-neg: -80px;
+    background-position: calc(var(--tamanho-neg)) calc(var(--tamanho-neg)), calc(var(--tamanho)) calc(var(--tamanho)), calc(var(--tamanho)) calc(var(--tamanho-neg)), calc(var(--tamanho-neg)) calc(var(--tamanho));
+  }
+

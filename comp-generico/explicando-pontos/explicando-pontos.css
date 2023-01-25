@@ -263,11 +263,15 @@ body {
             blue 12%,
             rgb(81, 0, 148) 16%,
             red 18%,
-            rgb(114, 245, 250) 21%
+            rgb(7, 64, 66) 21%
         );
     background-size: 80px 80px;
     --tamanho: 5px;
-    --tamanho-neg: -80px;
-    background-position: calc(var(--tamanho-neg)) calc(var(--tamanho-neg)), calc(var(--tamanho)) calc(var(--tamanho)), calc(var(--tamanho)) calc(var(--tamanho-neg)), calc(var(--tamanho-neg)) calc(var(--tamanho));
+    --tamanho-negativo: -80px;
+    background-position: 
+        calc(var(--tamanho-negativo)) calc(var(--tamanho-negativo)), 
+        calc(var(--tamanho)) calc(var(--tamanho)), 
+        calc(var(--tamanho)) calc(var(--tamanho-negativo)), 
+        calc(var(--tamanho-negativo)) calc(var(--tamanho));
   }
 
